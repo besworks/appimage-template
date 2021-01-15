@@ -1,0 +1,15 @@
+{
+  "name": "bits-appimage-template",
+  "version": "1.0.0",
+  "description": "Barebones AppImage Directory Structure",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/besworks/appimage-template.git"
+  },
+  "author": "besworks",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/besworks/appimage-template#readme"
+}

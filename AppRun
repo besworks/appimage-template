@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ ! -z "$APPIMAGE" ] && [ ! -z "$APPDIR" ]; then
+    MD5=$(echo -n "file://$APPIMAGE" | md5sum | cut -d ' ' -f 1)
+    cp "$APPDIR/icon.png" "$HOME/.cache/thumbnails/normal/$MD5.png"
+    echo "ADDED: $HOME/.cache/thumbnails/large/$MD5.png for $APPIMAGE"
+    xdg-icon-resource forceupdate
+fi
+
+#cd "$(dirname "$0")"
+cd $APPDIR
+exec ./app/run

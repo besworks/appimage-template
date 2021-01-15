@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "AppImage Template : REPLACE THIS SCRIPT WITH YOUR APP EXECUTABLE"
